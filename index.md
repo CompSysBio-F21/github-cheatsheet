@@ -59,7 +59,7 @@ Git is _version control software_. You install it on your laptop and use it to k
 
 You need to have git installed on your laptop. Most users will [install the software itself](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), though some tools like [GitHub Desktop](https://desktop.github.com/) install it as part of that tool.
 
-![github1](figs/Github-overview-01.jpg)
+![github1](figs/GitHub-overview-01.jpg)
 
 Git can be used by you without any internet connection - it is useful for storing versions of **plain-text files** (like Python files, in this class).  Unlike Google Docs, you decide when you want to _commit_ a version of your files. You will see git commands later to do this.
 
@@ -73,7 +73,7 @@ GitHub is a cloud-based hosting service for files under version control.  GitHub
 
 [GitHub Classroom](https://classroom.github.com/classrooms) offers a way for a class to work with assignments. In Bio331, you will get an **assignment link**. When you click an assignment link, you will generate a copy of the Lab2 repository in _your_ GitHub account (in the cloud). You can open the repo using the GitHub link to view the materials.
 
-![github4](figs/Github-overview-04.jpg)
+![github4](figs/GitHub-overview-04.jpg)
 
 Note that all Lab2 repository copies are all the same - this makes sense because all students should start with the same set of instructions.
 
@@ -81,7 +81,7 @@ Note that all Lab2 repository copies are all the same - this makes sense because
 
 Now you have the assignment in your GitHub account. However, you will want to modify these files on your own laptop.  This is called _cloning_ a repo.
 
-![github5](figs/Github-overview-05.jpg)
+![github5](figs/GitHub-overview-05.jpg)
 
 You can clone the repo by clicking the `Code` button. You have three options:
 
@@ -118,7 +118,7 @@ $ pwd
 
 Change the code on your laptop as you would usually do!  Now, everyone's version of the code on their laptop is different.
 
-![github6](figs/Github-overview-06.jpg)
+![github6](figs/GitHub-overview-06.jpg)
 
 ## 7 Submit the Assignment by Committing using Git and Pushing to GitHub
 
@@ -186,7 +186,7 @@ nothing to commit, working tree clean
 
 ### Pushing the commits to your repo in GitHub
 
-![github7](figs/Github-overview-07.jpg)
+![github7](figs/GitHub-overview-07.jpg)
 
 Finally, you need to _push_ the commits to GitHub.  
 
@@ -213,7 +213,7 @@ At this point, you can go to GitHub and confirm that the repo contains your chan
 
 Now, Anna will pull your code to her laptop, run it and provide feedback, and commit/push the feedback to your GitHub repo.
 
-![github9](figs/Github-overview-09.jpg)
+![github9](figs/GitHub-overview-09.jpg)
 
 You can view these changes on GitHub. If you want to get those changes onto your laptop, use `git pull`:
 
