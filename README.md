@@ -2,4 +2,4 @@
 
 List of Git and GitHub Classroom concepts used in Bio331: Computational Systems Biology
 
-See the website here: https://annaritz.github.io/python-crashcourse/
+See the website here: https://annaritz.github.io/github-classroom-cheatsheet/
