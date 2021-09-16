@@ -24,7 +24,7 @@ cd graphspace-starter-reedcompbio/
 
 This code block adds and commits changes.
 ```
-git add -a
+git add -u
 git commit -m "commit message"
 ```
 
@@ -159,7 +159,7 @@ Now, this modified file is ready to be committed.
 
 :question: Why do we need to add specific files?  In your repository, you might have some files that you don't want to have versions of (for example, python might generate `.pyc` files, or you might have output files). To add all
 
-:bulb: You can use `git add -a` to commit all changed files.
+:bulb: You can use `git add -u` to add all tracked files that have been modified (update tracked files).
 
 2. Next, you then _commit_ the files you have added. Include a short _commit message_ in the command line with the `-m` flag.  
 

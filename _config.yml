@@ -1,3 +1,5 @@
 theme: jekyll-theme-tactile
 title: GitHub Classroom Cheat Sheet
 description: Git and GitHub concepts used in Reed's Computational Systems Biology (Bio331).
+plugins:
+  - jemoji
