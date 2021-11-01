@@ -12,7 +12,7 @@ This is a summary of the commands you will use for managing files in git and Git
 - [6 Make Changes on Your Laptop](#6-make-changes-on-your-laptop)
 - [7 Submit the Assignment by Committing using Git and Pushing to GitHub](#7-submit-the-assignment-by-committing-using-git-and-pushing-to-github)
 - [8 Pulling Changes from GitHub to Your Laptop](#8-pulling-changes-from-github-to-your-laptop)
-- [9 Merges and Conflicts](#8-merges-and-conflicts)
+- [9 Merges and Conflicts](#9-merges-and-conflicts)
 
 ## Quick Start
 
@@ -274,4 +274,4 @@ Delete the tags with `<`,`=`, and `>`, and manually merge your code and GitHub's
 
 Once you have made these changes, verify that you can run the code and then `add` and `commit` it.  Congrats, you have resolved the merge!
 
-For more information, see [Resolve Merge Conflits in Git](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line).  Here's another, more in-depth tutorial about [Git merge conflicts](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts).
+For more information, see [Resolve Merge Conflits in Git](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line).  Here's another, more in-depth tutorial about [git merge conflicts](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts).
