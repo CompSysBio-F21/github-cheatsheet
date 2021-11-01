@@ -12,6 +12,7 @@ This is a summary of the commands you will use for managing files in git and Git
 - [6 Make Changes on Your Laptop](#6-make-changes-on-your-laptop)
 - [7 Submit the Assignment by Committing using Git and Pushing to GitHub](#7-submit-the-assignment-by-committing-using-git-and-pushing-to-github)
 - [8 Pulling Changes from GitHub to Your Laptop](#8-pulling-changes-from-github-to-your-laptop)
+- [9 Merges and Conflicts](#8-merges-and-conflicts)
 
 ## Quick Start
 
@@ -32,6 +33,13 @@ This code pulls changes (e.g., feedback or assignment fixes) from the GitHub rep
 ```
 git pull
 ```
+
+When you pull changes to your local machine, three things could happen:
+1. **The code is updated.** This is great! You're done.
+2. **A window opens to add a message.** This means that git is _merging_ the remote changes with your own committed code. You can simply quit the editor (try `:q` and hit enter if you are in `vim`).
+3. **You get a conflict.** Agh! This means that git cannot merge the code, and you'll have to do it. Check out [Section 9 (Merges and Conflicts)](#8-merges-and-conflicts).
+
+:exclamation: What happens if you open `vim` in the console and can't get out? Learn [10 different ways to exit vim](https://www.linuxfordevices.com/tutorials/linux/exit-vim-editor).
 
 ## 1 Navigating Directories
 
@@ -236,3 +244,34 @@ Fast-forward
 Now, there is now a new file called `feedback.txt`.
 
 :bulb: If there are changes to the assignment, Anna might also push changes to your repo. You can pull these changes using `git pull` as well.
+
+## 9 Merges and Conflicts
+
+There is a chance that, when writing code as a group (or when Anna pushes changes), the repository on GitHub will have changes that you do not have on your laptop yet.  Further, _you_ might be making changes on your local version that haven't been committed. When you type `git pull`, git will attempt to _merge_ the two versions.
+
+### Merging
+
+:bulb: Git is actually pretty smart, and will know when your changes are in a different location than the changes in the cloud. For example, suppose you are working on the assignment `python` file and Anna uploads `feedback.txt` - those are changes in two different files.
+
+Before git merges your code, it will prompt you to enter a message. It will usually open `vim` in the console (or NotePad on a Window's machine). You can enter a message or just quit the editor for git to continue working. To exit `vim`, type `:q` and hit Enter.
+
+:question: What happens if I have changes that I have _not_ yet committed?  Git won't even try to merge, and will warn you that you have un-committed changes.  You must `add` and `commit` your changes before git will merge.
+
+### Resolving Conflicts
+
+Now, suppose instead that you are working on a `main()` function in `run.py` and Anna makes changes to the same `main()` function. Git won't know which version should be kept, or how the lines in this function should be resolved.  When this happens, git will say that you have a `merge conflict` in `run.py`.  
+
+When you open `run.py`, you will see **your** changes bracketed between `<<<<<<` and `======` and changes from the **GitHub Repo** bracketed by `======` and `>>>>>>>`:
+```
+<<<<<<< HEAD
+this is YOUR code
+=======
+this is THEIR code
+>>>>>>> <commit version>
+```
+
+Delete the tags with `<`,`=`, and `>`, and manually merge your code and GitHub's code. It's possible that you want to keep both versions of the code (for example if two functions were written in the same place in `run.py`, but they are different functions). In other cases, you want to remove duplicate code.
+
+Once you have made these changes, verify that you can run the code and then `add` and `commit` it.  Congrats, you have resolved the merge!
+
+For more information, see [Resolve Merge Conflits in Git](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line).  Here's another, more in-depth tutorial about [Git merge conflicts](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts).
